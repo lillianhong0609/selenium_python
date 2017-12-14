@@ -1,0 +1,92 @@
+使用chrom 先chromedriver.exe  有回应
+使用ie 先安装iedriver.exe
+
+selenium1.0
+selenium IDE进行录制回放，但实际会丢失元素，单线程模式，如果修改某一环节，脚本全部废弃
+selenium grid 分布式，远程控制
+selenium rc 客户端服务端模式
+
+换行默认结束
+selenium2.0=selenium1.0+webdriver(重点)
+
+\ 转意字符
+\n 换行
+\t=tab  4个空格
+%s 格式化输出
+%s是指string类型
+%d是指int类型整数
+python 2
+print "hello world!"
+
+python3
+print ("hello world!")   print在3中为一个函数，必须加（）
+
+input()外部输出。例如控制台
+SyntaxError: Non-ASCII character '\xe8' in file
+head加# coding=utf-8  代表声明
+    or #coding:utg-8
+    or # -*- coding:utf-8 -*-
+
+缩进 tab
+取消 shift + tab
+
+编程的世界里非0为真，0为假
+
+驼峰命名法
+
+
+
+# coding=utf-8
+# print "hello \nworld!"
+# print "hello   world!"
+# print "hello \tworld!"
+# print "hello \\\\"
+#
+# print ("hello \nworld!")
+# print ("hello" +"world!")
+
+# age = "23"
+# name = "lillian"
+# print name+"\tage is "+age
+# print "%s age id %s" %(name,age)
+
+# age = input("请输入你的年龄:")
+# print "lillian age is:%s" % age
+#
+# name = raw_input("请输入你的名字：")
+# print  "%s" % name
+
+# 题目 a=b值  b=a值
+a = 1  # 定义变量a
+b = 2  # 定义变量b
+print "a = %s" %b  # 打印输出a赋予b的值
+print "b = %s" %a  # 打印输出b赋予a的值
+
+import random
+a = 1  # a为区间1
+b = 99  # b为区间99
+n = random.randint(a, b)  # 随机数
+print n  # 输出随机数
+num = input("请输入一个数字：")  # 使用num匹配随机数
+while num > 0:
+    if num != n and num < n:
+        a = num
+        num = input("请输入一个整数%s到%s：" % (num, b))
+    elif num != n and num > n:
+        b = num
+        num = input("请输入一个整数%s到%s：" % (a, b))
+    else:
+        # num = n  # iF num=n 打印good
+        print "good"
+        break
+
+
+# = 为赋值   ==为判断两边是否相等
+
+
+------第二课
+python强制转换概念
+数组是否可以进行切片
+
+for i in range (1,40,3) # 	起点 终点 步长（步长作用 即前一位数+步长=后一位数）
+python3 中使用range() 需加上list() 即list(range())
